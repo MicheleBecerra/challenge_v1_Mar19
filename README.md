@@ -1,68 +1,41 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Challenge N12 reclutamiento
 
-## Available Scripts
+Objetivo
 
-In the project directory, you can run:
+Crear una interfaz con react y cualquier otra herramienta que les parezca adecuada para la tarea. La elección es libre, así como el patrón de diseño de componentes, bibliotecas de componentes (Bootstrap, SemanticUI, UIKit, MaterialUI), estilos (css, sass, less), manejo de estado (Redux, Flux, Mobx). Pueden realizar cualquier configuración(Webpack, CRA, Gulp), Se recomienda utilizar react-router.
 
-### `npm start`
+La interfaz tiene que tener los siguientes elementos
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Ruta que muestre todos los posts disponibles
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Modal en el que después de pedir que el usuario se registre muestre un artículo privado
 
-### `npm test`
+Los artículos que sean privados deben tener algún tipo de indicador
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Mostrar los artículos públicos sin que el usuario se registre
 
-### `npm run build`
+La maqueta sólo es ilustrativa en términos del uso y organización de información sin embargo no es necesario que la repliquen.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Maqueta: https://xd.adobe.com/view/806df7f9-9ea4-4dbe-559a-2d246c0b4c47-f65c/
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Password: Challenge19
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Puntos extra
 
-### `npm run eject`
+Deployment (Heroku, AWS, DigitalOcean, etc)
+Comentar tus cambios (Git)
+API
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+El back end es un REST API service que tiene las siguientes rutas
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://documenter.getpostman.com/view/3540797/S1EJW19p
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Pueden usar postman para generar un usario, después activarlo o hacerlo directo desde la interfaz que van a crear.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+##Instrucciones
 
-## Learn More
+Necesitan clonar este repositorio, después hacer un branch con su nombre p.ej. "fulanodetal" y consumir la api que está publicada en
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+https://challenge-n12.herokuapp.com/api/v1
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+En la documentación que está arriba encuentran las rutas disponibles públicas y privadas. Ya hay 3 artículos publicados, 2 privados y un público para que puedan construir el frente con algo de información en la base de datos
