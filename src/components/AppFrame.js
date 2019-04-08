@@ -6,7 +6,7 @@ const AppFrame = ({ header, body }) => {
     return (
         <div>
             <div className = 'app-frame'>
-                <AppHeader title = {props.header}></AppHeader>
+                <AppHeader title = {header}></AppHeader>
                 <div> {body} </div>
                 <div>Imperio Beta</div>
             </div>

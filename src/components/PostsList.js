@@ -3,22 +3,22 @@ import PropTypes from 'prop-types';
 import PostListItem from './PostListItem';
 
 
-const PostsList =  ({ posts })=> {
+const PostsList =  ({ posts, urlPath })=> {
     return (
-        <div>
+        
             <div className="posts-list">
             {
                 posts.map( p =>
-                    <PostListItem
-                    key={p.id}
-                    id={p.id}  
-                    images={p.images}
-                    title={p.title}
-                    urlPath={urlPath}>                                       
-                    </PostListItem>)
+                    <PostListItem                   
+                        key={p._id}
+                        id={p._id}  
+                        images={p.images}
+                        title={p.title}
+                        urlPath={urlPath}
+                    ></PostListItem >)
             }
             </div>
-        </div>
+      
     );
 };
 

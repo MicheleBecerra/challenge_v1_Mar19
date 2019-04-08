@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { parentPort } from 'worker_threads';
+
 
 const PostActions = ({ children }) => {
     return (
