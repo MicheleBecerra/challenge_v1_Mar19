@@ -8,8 +8,8 @@ class PostContainer extends Component {
     render() {
         return (
             <div>
-                <AppFrame header = {` ID de la publicación: ${this.props._id}`}
-                    body= {<p>  {this.props.post.title}</p>}>
+                <AppFrame header = {  <h1> {this.props.post.title} </h1>}
+                    body= {<p>  {this.props.post.title} </p>}>
 
                 </AppFrame>
             </div>
@@ -23,7 +23,9 @@ _id: PropTypes.string.isRequired,
 };
 
 const mapStateToProps = ( state, props) => ({
-    post :  getPostById( state, props)
+    post :  getPostById( state, props) 
+    
 });
+
 
 export default connect(mapStateToProps, null) (PostContainer);
