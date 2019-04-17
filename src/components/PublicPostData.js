@@ -10,7 +10,7 @@ const PublicPostData = ({ title, _id, images, isPrivate, text, status, publish_d
             <div>Número ID: <i>{_id}</i></div>
             <div>Imagen: <i>{images}</i></div>
             <div>Disponibilidad del artículo: <i>{isPrivate}</i> </div>
-            <div> Contenido : <i>{text}</i></div>
+            <div> Texto : <i>{text}</i></div>
             <div>Status del Post: <i>{status}</i></div>
             <div>Fecha de Publicación:  <i>{publish_date}</i></div>
             
