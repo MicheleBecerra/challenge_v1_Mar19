@@ -22,7 +22,7 @@ render() {
         <Route exact path= "/public/posts" component={AllPostsContainer} />
         <Route exact path= "/public/posts/:_id"
                render={ props =>  <PostContainer {...props} _id = {props.match.params._id}  /> } />
-        <Route exact path="/posts" component={this.renderPrivatePostContainer} />
+        <Route exact path="/posts/:id" component={this.renderPrivatePostContainer} />
                 
         </div>
       </Router>

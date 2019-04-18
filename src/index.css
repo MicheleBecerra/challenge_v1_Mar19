@@ -27,3 +27,8 @@ body {
     background:  rgb(97, 86, 128);
     display: inline-block ;
 }
+.app-footer {
+  background: rgb(102, 102, 116) ;
+  margin: 1px;
+  padding: 20px;
+}

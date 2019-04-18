@@ -14,7 +14,7 @@ const PostListItem = ({ title, _id, images, isPrivate, publish_date, text }) => 
                     <div> Número ID: <i>{_id} </i></div>
                     <div> Imagen: <img src={images} width='300px' height= '200px'/>
                     <br/>
-                    <Link to = {`posts/${_id}`} >Leer más ... {text}.</Link>
+                    <Link to = {`posts/${_id}`} >Leer más ... {title}.</Link>
                     </div>
                     <div>Disponibilidad del artículo: <i>{isPrivate}</i> </div>
                     <div>Fecha de Publicación:  <i>{publish_date}</i></div>

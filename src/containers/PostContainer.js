@@ -8,15 +8,14 @@ class PostContainer extends Component {
     render() {
         return (
             <div>
-                <AppFrame header = {<h1> {this.props.post.title} </h1>}
+                <AppFrame header = {<h2> {this.props.post.title} </h2>}
                     body= {
                         <div>
-                            <img src= {this.props.post.images} />
-                        </div>
-                    
+                            <img src= {this.props.post.images} width='300px' height= '200px'/>
+                            <p> Mucho texto bla bla bla ..... no traía texto la APi.</p>
+                        </div>                    
                     } 
-                    
-                    >
+                >
 
                 </AppFrame>
             </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import AppHeader from './AppHeader';
+import './../index.css';
 
 const AppFrame = ({ header, body }) => {
     return (
@@ -8,7 +9,7 @@ const AppFrame = ({ header, body }) => {
             <div className = 'app-frame'>
                 <AppHeader title = {header}></AppHeader>
                 <div> {body} </div>
-                <div>Imperio Beta</div>
+                <div className= 'app-footer'>Imperio Beta</div>
             </div>
         </div>
     );

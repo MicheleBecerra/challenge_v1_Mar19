@@ -20,7 +20,7 @@ class HomeContainer extends Component {
                                 <br />
                                 <Link to='/public/posts'> Todos los post públicos de la la API </Link>
                                 <br />
-                                <Link to='/posts'> Todos los post  privados  de la la API </Link>
+                                <Link to='/posts/:id'> Todos los post  privados  de la la API </Link>
                             </PostActions>
                         </div>
 
